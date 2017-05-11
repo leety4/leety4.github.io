@@ -38,6 +38,7 @@ function handleMouseMove(event) {
       if(alpha < 0.2){
         alpha = 0.2;
       }
+      console.log(alpha)
       ctx.fillStyle = 'rgba(150,255,0,'+alpha+')';
       ctx.fillRect(x,y,1,1);
     }
