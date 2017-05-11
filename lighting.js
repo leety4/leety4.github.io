@@ -30,7 +30,7 @@ function handleMouseMove(event) {
   var ctx = c.getContext("2d");
   for(var x = 0; x < c.width; x++){
     for(var y = 0; y < c.height; y++){
-      dist = abs(floor(sin(x-pageX,y-pageY)));
+      dist = Math.abs(Math.floor(Math.sin(x-pageX,y-pageY)));
       var alpha = dist+0.2;
       ctx.fillStyle = 'rgba(150,255,0,'+str(alpha)+')';
       ctx.fillRect(x,y,1,1);
