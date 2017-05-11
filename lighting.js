@@ -24,13 +24,12 @@ function handleMouseMove(event) {
       (doc && doc.scrollTop  || body && body.scrollTop  || 0) -
       (doc && doc.clientTop  || body && body.clientTop  || 0 );
   }
-  var dist;
   var c = document.getElementById("canvas");
   var ctx = c.getContext("2d");
   ctx.strokeStyle = 'rgba(0,0,0,0)';
   for(var x = 0; x < c.width; x++){
     for(var y = 0; y < c.height; y++){
-      dist = Math.abs(Math.floor(Math.sin(x-pageX,y-pageY)));
+      var dist = Math.abs(Math.floor(Math.sin(x-pageX,y-pageY)));
       var alpha = dist/1*0.8+0.2;
       ctx.fillStyle = 'rgba(150,255,0,'+alpha.toString()+')';
       ctx.fillRect(x,y,1,1);
