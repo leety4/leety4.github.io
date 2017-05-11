@@ -9,3 +9,4 @@ var loadfunct = function{
     }
   }
 };
+c.addEventListener("load", loadfunct);
