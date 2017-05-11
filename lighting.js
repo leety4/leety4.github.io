@@ -32,7 +32,7 @@ function handleMouseMove(event) {
     for(var y = 0; y < c.height; y++){
       dist = Math.abs(Math.floor(Math.sin(x-pageX,y-pageY)));
       var alpha = dist/1*0.8+0.2;
-      ctx.fillStyle = 'rgba(150,255,0,'+str(alpha)+')';
+      ctx.fillStyle = 'rgba(150,255,0,'+alpha.toString()+')';
       ctx.fillRect(x,y,1,1);
     }
   }
