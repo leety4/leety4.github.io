@@ -1,7 +1,7 @@
 var loadfunct = function(){
   var c = document.getElementById("canvas");
   var ctx = c.getContext("2d");
-  ctx.fillStyle = 'rgba(150,255,0,0.2)';
+  ctx.fillStyle = 'rgba(0,0,0,1)';
   ctx.strokeStyle = 'rgba(0,0,0,0)';
   ctx.fillRect(0,0,c.width,c.height);
   ctx.fillStyle = 'rgba(150,255,0,0.2)';
@@ -28,7 +28,7 @@ function handleMouseMove(event) {
   }
   var c = document.getElementById("canvas");
   var ctx = c.getContext("2d");
-  ctx.fillStyle = 'rgba(150,255,0,0.2)';
+  ctx.fillStyle = 'rgba(0,0,0,1)';
   ctx.strokeStyle = 'rgba(0,0,0,0)';
   ctx.fillRect(0,0,c.width,c.height);
   for(var x = 0; x < c.width; x++){
