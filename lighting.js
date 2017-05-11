@@ -38,7 +38,7 @@ function handleMouseMove(event) {
       if(alpha < 0.2){
         alpha = 0.2;
       }
-      ctx.fillStyle = 'rgba(150,255,0,'+alpha.toString()+')';
+      ctx.fillStyle = 'rgba(150,255,0,'+alpha+')';
       ctx.fillRect(x,y,1,1);
     }
   }
