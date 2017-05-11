@@ -3,6 +3,8 @@ var loadfunct = function(){
   var ctx = c.getContext("2d");
   ctx.fillStyle = 'rgba(150,255,0,0.2)';
   ctx.strokeStyle = 'rgba(0,0,0,0)';
+  ctx.fillRect(0,0,c.width,c.height);
+  ctx.fillStyle = 'rgba(150,255,0,0.2)';
   for(var x = 0; x < c.width; x++){
     for(var y = 0; y < c.height; y++){
       ctx.fillRect(x,y,1,1);
@@ -26,7 +28,9 @@ function handleMouseMove(event) {
   }
   var c = document.getElementById("canvas");
   var ctx = c.getContext("2d");
+  ctx.fillStyle = 'rgba(150,255,0,0.2)';
   ctx.strokeStyle = 'rgba(0,0,0,0)';
+  ctx.fillRect(0,0,c.width,c.height);
   for(var x = 0; x < c.width; x++){
     for(var y = 0; y < c.height; y++){
       var dist = Math.abs(Math.floor(Math.sin(x-pageX,y-pageY)));
