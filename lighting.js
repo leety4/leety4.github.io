@@ -1,6 +1,6 @@
 var c = document.getElementById("canvas");
 var ctx = c.getContext("2d");
-ctx.fillColor(150,255,100,0.2);
+ctx.fillStyle = "30a0ff00";
 ctx.noStroke();
 for(var x = 0; x < 800; x++){
   for(var y = 0; y < 800; y++){
