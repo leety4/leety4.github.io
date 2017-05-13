@@ -12,6 +12,7 @@ var loadfunct = function(){
   }
 };
 (function(){
+"use strict";
 document.onmousemove = handleMouseMove;
 function handleMouseMove(event) {
   var dot, eventDoc, doc, body, pageX, pageY;
