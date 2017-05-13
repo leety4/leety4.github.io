@@ -15,7 +15,7 @@ var loadfunct = function(){
 "use strict";
 document.onmousemove = handleMouseMove;
 function handleMouseMove(event) {
-  var dot, eventDoc, doc, body, pageX, pageY;
+  var eventDoc, doc, body, pageX, pageY;
   event = event || window.event; // IE-ism
   if (event.pageX == null && event.clientX != null) {
     eventDoc = (event.target && event.target.ownerDocument) || document;
