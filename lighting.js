@@ -1,8 +1,20 @@
+var loadfunct = function(){
+  var c = document.getElementById("canvas");
+  var ctx = c.getContext("2d");
+  ctx.fillStyle = 'rgba(0,0,0,1)';
+  ctx.strokeStyle = 'rgba(0,0,0,0)';
+  ctx.fillRect(0,0,c.width,c.height);
+  ctx.fillStyle = 'rgba(150,255,0,0.2)';
+  for(var x = 0; x < c.width; x++){
+    for(var y = 0; y < c.height; y++){
+      ctx.fillRect(x,y,1,1);
+    }
+  }
+};
 (function(){
-"use strict";
 document.onmousemove = handleMouseMove;
 function handleMouseMove(event) {
-  var eventDoc, doc, body, pageX, pageY;
+  var dot, eventDoc, doc, body, pageX, pageY;
   event = event || window.event; // IE-ism
   if (event.pageX == null && event.clientX != null) {
     eventDoc = (event.target && event.target.ownerDocument) || document;
