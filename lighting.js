@@ -11,6 +11,7 @@ var loadfunct = function(){
     }
   }
 };
+(function(){
 document.onmousemove = handleMouseMove;
 function handleMouseMove(event) {
   var dot, eventDoc, doc, body, pageX, pageY;
@@ -43,3 +44,4 @@ function handleMouseMove(event) {
     }
   }
 }
+})();
