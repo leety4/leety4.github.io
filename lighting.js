@@ -34,7 +34,7 @@ function handleMouseMove(event) {
   for(var x = 0; x < c.width; x++){
     for(var y = 0; y < c.height; y++){
       var dist = Math.abs(Math.sqrt((x-event.pageX)*(x-event.pageX)+(y-event.pageY)*(y-event.pageY)));
-      var alpha = dist/100*0.8+0.2;
+      var alpha = 1/(dist/10*0.8+1.2);
       if(alpha < 0.2){
         alpha = 0.2;
       }
