@@ -35,9 +35,9 @@ function handleMouseMove(event) {
   for(var x = 0; x < c.width; x++){
     for(var y = 0; y < c.height; y++){
       var dist = Math.abs(Math.sqrt((x-event.pageX)*(x-event.pageX)+(y-event.pageY)*(y-event.pageY)));
-      var alpha = 1/(dist/10*0.8+1.2);
-      if(alpha < 0.2){
-        alpha = 0.2;
+      var alpha = 1/(dist/10*0.8+1.1);
+      if(alpha < 0.1){
+        alpha = 0.1;
       }
       ctx.fillStyle = 'rgba(150,255,0,'+alpha+')';
       ctx.fillRect(x,y,1,1);
