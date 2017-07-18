@@ -35,7 +35,7 @@ function handleMouseMove(event) {
   ctx.fillRect(0,0,c.width,c.height);
   for(var x = 0; x < c.width; x++){
     for(var y = 0; y < c.height; y++){
-      var dist = Math.abs(Math.sqrt((x-event.pageX)*(x-event.pageX)+(y-event.pageY)*(y-event.pageY)));
+      var dist = Math.abs(Math.sqrt((x-sqrt(event.pageX))*sqrt((x-event.pageX))+sqrt((y-event.pageY))*sqrt((y-event.pageY))));
       var alpha = 1/(dist/10*0.8+1.1);
       if(alpha < 0.1){
         alpha = 0.1;
